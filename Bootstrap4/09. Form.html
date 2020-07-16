@@ -1,0 +1,44 @@
+<!-- post(일종의 암호화 login시 password) 형식으로 보내는 방식이 Form tag -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Stacked form</h2>
+  <!-- 서버 프로그램의 페이지 -->
+  <form action="/action_page.php" method="POST">
+
+    <div class="form-group">
+      <label for="uid">Email:</label>
+      
+      <!-- 서버 프로그램이 받아서 해석하기 위한 정보 = name , id -->
+      <!-- id = 주로 javascript가 이용 name이 없는 경우 id를 javascript가 받아서 전송 -->
+      <input type="text" class="form-control" id="uid" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+
+    <!-- 서버에 보내는 타입 submit -->
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
