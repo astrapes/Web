@@ -10,9 +10,10 @@ the-movies-dataset
 logs
 dogs-vs-cats
 NYT-comments
-model
+model/
+upload/
 googlemapskey.txt
-
+static/
 # Byte-compiled  optimized  DLL files
 __pycache__
 .py[cod]
